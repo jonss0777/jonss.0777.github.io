@@ -7,6 +7,10 @@
     <title>Jonathan Suconota</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <!-- This script tag bootstraps PyScript -->
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 </head>
 
 <body>
@@ -32,8 +36,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="projects.html">Projects</a>
                     </li>
-                   
-                     <li class="nav-item">
+
+                    <li class="nav-item">
                         <a class="nav-link" href="cstutorials.html">Computer Science Tutorials</a>
                     </li>
                     <li class="nav-item">
@@ -50,113 +54,106 @@
     <div class="container pt-1">
         <h1 class="text-center">Computer Science Tutorials</h1>
 
+        <h4 style="margin-top: 10x;">Topics: </h4>
+        <ul>
+            <li><a>Python Programming</a></li>
+            <li><a>C++ Programming</a></li>
+            <li><a>C++ Programming</a></li>
+            <li><a>Threads in Python</a></li>
+            <li><a>Threads in C++</a></li>
+            <li><a>Data Structures and Algoritms in Python</a>
+                <ul>
+                    <li>Lists, Tuples, Sets, and Dictionaries</li>
+                    <li>Algorithms strategies</li>
+                </ul>
+            </li>
+            <li><a>Micro controllers</a></li>
+            <li><a>NGINX</a></li>
+        </ul>
 
-        <div class="container  text-center  pt-1 ">
+        <section>
+            <h6>Motivation:</h6>
+            <p>Before we start I guess we should talk about what is programming or in a more humble voice
+                what I believe programming to be. The device you are currently viewing this text on is most likely
+                a smart device and you like many have become accostume to simply using this devices without thinking
+                about how every piece of it works.
+                They helps us stay in contact with our family, friends, and help us meet new people or
+                order a 1 day delivery package through amazon prime. We play games, take photos, search for a location,
+                make reservations, submit assignments, answer questions in math, science, or help us find music that
+                without it
+                might had taken us months to hear about. <br><br>
 
-            <!-- ROW # 1-->
-            <div class="row gx-4">
+                It sounds like I went on a tangent, but I just wanted to give you some real life scenerarios of where
+                the following topics that will be cover in this page are used, some a
+                little more obvious than others.
+            </p>
+        </section>
 
-                <!-- PROJECT 1-->
-                <div class="col">
-                    <div class="card p-2" style="width: 18rem;">
-                        <img src="../mywebsite/assets/enviroment_sensor.jpg" class="card-img-top" alt="Data Structures Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Data Structures and Algorithms</h5>
-                            <p class="card-text">
-                               My review sheet for Data Structures
-                               <ul style="list-style-type: none;">
-                                <li>
-                                    <a href=""><b>Stack and Queues</b></a>
-                                </li>
-                                <li>
-                                    <a href=""><b>Link Lists</b></a>
-                                </li>
-                                <li>
-                                    <a href=""><b>Trees</b></a>
-                                </li>
-                                <li>
-                                    <a href=""><b>Graph</b></a>
-                                </li>
-                               </ul>
-                            </p>
-                            <!-- <a href="#" class="btn btn-primary">Go</a> -->
-                        </div>
-                    </div>
-                </div>
+        <section id="python_programming">
+            <h6>Python Programming</h6>
+
+            <p>
+            Variables:
+            </p>
+            <pre>
+            <code style="color:rgb(128, 24, 52)">
+            # A variable name can be "name" for example
+            name = "Jon"
+            
+            # variables can contain characters, numbers and _
+            favorite_sport = "soccer"
+            employee_1 = "Jack"
+
+            # However, there are some restrictions
+            # Starting a variable name with a digit will throw
+            # an error(is not allowed).
+            # For example
+            623house = "Elmont's House"
+
+        </code>
+
+            </pre>
+            <py-script>
 
 
 
-                <!-- PROJECT 2-->
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="" class="card-img-top" alt="Big Data Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Big Data Algorithms</h5>
-                            
-                            <div class="card-text">
-                                Different big data models
-                                <ul style="list-style-type: none;">
-                                <li>
-                                    <a href=""><b>Hashing</b></a> 
-                                    <br>1 Level hashing
-                                    <br>2 Level hashing
-                                </li>
-                                <li>
-                                    <a href="streamingmodel.html"><b>Streaming</b></a>
-                                    <br>Morris Counter 
-                                    <br>Bloom Filter
-                                    <br>AMC (Frequency Estimator)
-                                </li>
-                                <li>
-                                    <a href=""><b>External Memory</b></a>
-                                </li>
-                              
-                                </ul>
+            </py-script>
 
-                            </div>
-                            <!-- <a href="" class="btn btn-primary">Go</a> -->
-                        </div>
-                    </div>
-                </div>
+            <p>Ok, that explains how you can create a variable in python. It doesn't explain what it represents.</p>
+            
+            <p>A variable can be though of as a name for a location of memory in our computer. Visually this looks like this...
 
-                <!-- PROJECT 3-->
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="" class="card-img-top" alt="Wireless Communication Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Wireless Communications</h5>
-                            <p class="card-text">
-                                <ul style="list-style-type:none;">
-                                <li> What are wireless Communications?</li>
-                                <li> What are signals? </li>
-                                <li> Signal Manipulation?</li>
-                                <li> Building your own Wifi receiver and transmiter using N6.</li>
-                                </ul>
-                            </p>
-                            <!-- <a href="#" class="btn btn-primary">Go</a> -->
-                        </div>
-                    </div>
-                </div>
+            </p>
+            
+            <image src="assets\variables_memory_figure_0_0.png" height="500px"></image>
 
-            <!-- PROJECT 4-->
-            <div class="col">
-                <div class="card p-2" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="AI and ML Image"> 
-                    <div class="card-body">
-                        <h5 class="card-title">AI and Machine Learning</h5>
-                        <p class="card-text">
-                            Evaluating generative AI model.
-                        </p>
-                        <!-- Video Embed -->
 
-                        <!-- <a href="#" class="btn btn-primary">Go</a> -->
-                    </div>
-                </div>
-            </div>
+            <p>Functions: </p>
+            <br>
+            
+            The following two terms will sound madness but if you get to understand them they will help you understand 
+            the power of variables. 
 
-            <!-- END OF ROW 1-->
+            <br>
+            pass by reference
+            <br>
+            pass by value 
+        
 
-        </div>
+
+            </p>
+
+
+
+
+        </section>
+
+        <section id="cpp_programming">
+            <h6>C++ Programming</h6>
+
+        </section>
+
+
 
 
     </div>
