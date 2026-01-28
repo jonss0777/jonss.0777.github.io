@@ -1,49 +1,172 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jonathan Suconota</title>
-    <link rel="stylesheet" href="css/index.css">
 
 </head>
 
 <body>
-
-    <nav class="navbar">
-        <ol class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="aboutme.html">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="notes/notes.html">Notes</a>
-            </li>
+    <header>
+        <ol>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <link rel="stylesheet" href="style.css">
         </ol>
-       
+    </header>
 
-    </nav>
-    <div class="main-container ">
-       
-        <section>
-            <h3>Home page</h3>
+    <content>
+        <section id="home">
+            <div id="randomQuote">
+                <p id="simpson_phrase"></p>
+                <span id="author"></span>
+            </div>
+        </section>
 
+        <hr>
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <!-- Project 1 -->
+
+            <div>
+                <h3>DIY Sensor</h3>
+                <summary>
+                    <p><b>Motivation:</b> Making your own personal temperature and humidity sensor.</p>
+
+
+                    <p>Tools used</p>
+                    <ol id="list_of_tools">
+                        <li>ESP32 Wrover IE: A low-power microcontroller.</li>
+                        <li>Cloud Flare Workers: Serverless plaform that is run on the edge <a
+                                href="https://www.netlify.com/blog/edge-cdn-serverless-cloud-meaaning/">(more)</a></li>
+                    </ol>
+                    <p>Git repository: <a href="https://github.com/jonss0777/DIY_Sensor">link</a></p>
+                </summary>
+
+                Tags:
+                <ol id="tags">
+                    <li>
+                        HTTP
+                    </li>
+                    <li>
+                        Cloudflare workers
+                    </li>
+                    <li>Wiring</li>
+                    <li>Sensors</li>
+                    <li> Microcontroller</li>
+                </ol>
+            </div>
+
+            <!-- Project 2 -->
+            <div>
+                <h3>Multi View</h3>
+                <summary>
+                    <p><b>Motivation:</b>: Build a robust web form. Peform a subjective survey on the results using
+                        different statistical methods.</p>
+                    <p>Tools used</p>
+                    <ol id="list_of_tools">
+                        <li>App Script</li>
+                        <li>Angular and Pytorch </li>
+                    </ol>
+                    <p>Git repository: <a href="">link</a></p>
+                    <p>Paper: <a hred="">link</a></p>
+                </summary>
+
+                Tags:
+                <ol id="tags">
+                    <li>
+                        Web Frameworks
+                    </li>
+                    <li>
+                        Deep Learning and ML Libraries
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Project 3 -->
+            <div>
+                <h3>Headless Server</h3>
+                <summary>
+                    <p><b>Motivation:</b> What is a load balancer? How does it work?</p>
+                    <p>Tools used</p>
+                    <ol id="list_of_tools">
+                        <li>Raspberry Pi</li>
+                        <li>Docker</li>
+                    </ol>
+                    <p>Git repository: <a href="">link</a></p>
+                </summary>
+
+                Tags:
+                <ol id="tags">
+                    <li>
+                        Linux
+                    </li>
+                    <li>
+                        Containers
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <hr>
+
+
+
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <p> For this section I hope that in the future I will be able to write more in depth walkthroughts about the
+                above projects. </p>
 
         </section>
 
+        <hr>
 
+        <section id="aboutme">
+            <h2>About Me</h2>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                
+                <div> <img width="300px" height="400px"  style="border-radius: 80px;" src="assets/me.jpg">
+                </div>
+                <p>Hi,
+                    <br>
+                    <br>
+                    I am Jonathan Suconota. I graduated from Queens College in 2025 with a Bachelor of Science Degree in
+                    Computer Science. I am interested in becoming a backend engineer. My previous internship experience lead me to work with micro controllers where I learned 
+                    important engineering design principles such as adding on to an existing systems instead of modifying it completly because that could break backwards compatibility. I also learned and built data pipelines 
+                    to handle incoming data from multiple temperature, humidity, and particle matter sensors the team at ASRC has spread out all around NYC.  
 
+                    <br> 
+                    At my most recent role as an undergraduate researcher. I have developed a form to collect doctor feedback on an existing GAN model. This model generates different angles of RPO images given a center image. During this process I explored technologies like AWS, Heroku for deployment and sumarized the expected costs to my supervisor and offered alternatives.
+                    
+                </p>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2>Leave a note</h2>
+            <div class="prev_notes"></div>
+            <p>Since you got this far leave a message for the next visitor.</p>
+            <form action="" method="get" class="form-example">
+                <div class="form-example">
+                    <label for="name">Nickname: </label>
+                    <input type="text" name="name" id="name" required />
+                </div>
+                <div class="form-example">
+                    <label for="email">Comment: </label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+                <div class="form-example">
+                    <input type="submit" value="Subscribe!" />
+                </div>
+            </form>
 
-    </div>
-    <footer>
+        </section>
 
-    </footer>
+    </content>
 </body>
+<script src="index.js" defer></script>
+
 
 </html>
